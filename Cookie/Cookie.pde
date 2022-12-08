@@ -1,7 +1,14 @@
 //Global Variables
+int appWidth, appHeight, smallDimension, largeDimension;
 //
 void setup() {
+  size(500, 550);
+  appWidth = width;
+  appHeight = height;
+  //Assignment: Display Algorithm from Hello World
+  displayAlgorithm();
   keyBinds();
+  debug();
 } //End setup
 //
 void draw() {
