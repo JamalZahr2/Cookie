@@ -1,5 +1,6 @@
 //Global Variables
 int appWidth, appHeight, smallDimension, largeDimension;
+Boolean portrait = false, landscape = false;
 //
 void setup() {
   size(500, 550);
