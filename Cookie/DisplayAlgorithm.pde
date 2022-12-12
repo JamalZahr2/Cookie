@@ -1,26 +1,31 @@
 void displayAlgorithm() {
-  println("App Size =","\tWidth="+width, "\t\tHeight="+height);
+  println("App Size =", "\tWidth="+width, "\t\tHeight="+height);
   println("Monitor Display =", "\twidth:"+displayWidth, "\theight:"+displayHeight);
   //
   String ls="Landscape or Square", p="portrait", DO="Display Orientation", instruct="Your phone needs to be turned";
   //
-  if ( appWidth > appHeight ) { //Declaring Portrait
+  if ( appWidth >= appHeight ) { //Declaring Portrait
     println(instruct);
     landscape = true;
+  }
+  if ( appHeight > appWidth ) {
+    portrait = true;
+  }
+  if ( appHeight > displayHeight ) {
+    println("Display: Not working -_-'");
+    exit();
+  }
+  if ( appWidth > displayWidth ) { //Fitting CANVAS into Monitor Display 
+    println("Display: Not working -_-'");
+    exit();
   } else {
-    if ( appHeight > displayHeight ) {
-      println("Display: Not working -_-'");
-      exit();
-    }
-    if ( appWidth > displayWidth ) { //Fitting CANVAS into Monitor Display 
-      println("Display: Not working -_-'");
-      exit();
-      portrait = true;
+    if ( displayWidth > appWidth && displayHeight > appHeight ) {
       println("Display: Good to Go");
     } else {
       //Empty ELSE
     }
   }
+  //
   if ( appWidth > appHeight ) {
     largeDimension = appWidth;
     smallDimension = appHeight;
