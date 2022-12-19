@@ -3,7 +3,7 @@ PFont Comic;
 void tSetup() {
   //String[] fontList = PFont.list(); //To list all fonts available on OS
   //printArray(fontList);
-  Comic = createFont("Comic Sans MS", 55);
+  Comic = createFont("ComicSansMS", 55);
 } //End text
 //
 void spaceBarText() {

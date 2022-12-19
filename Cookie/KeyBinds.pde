@@ -8,6 +8,7 @@ void keyBinds() {
   if ( OS=true && key == ' ' ) {
     splashScreenStart=1;
     spaceBarText();
+    Tabs();
   } //End Splash Screen Space Bar
   //if () {;} //End OS Level Mouse Click
 } //End keyBinds
