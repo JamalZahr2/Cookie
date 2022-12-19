@@ -2,7 +2,7 @@
 int appWidth, appHeight, smallDimension, largeDimension;
 Boolean portrait = false, landscape = false, OS = false;
 float startX, startY, startWidth, startHeight;
-PFont Comic, Font2;
+//PFont Comic = createFont("Comic Sans MS", 55), Font2;
 String spaceBar = "Press the Space Bar to Begin!";
 float splashScreenStart;
 color resetInk = #FFFFFF;
