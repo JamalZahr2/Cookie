@@ -1,6 +1,4 @@
 void population() {
-  Comic = createFont("Comic Sans MS", 55);
-  
 } //End population
 //
 // End Subprogram
