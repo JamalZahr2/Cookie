@@ -6,6 +6,7 @@ float startX, startY, startWidth, startHeight;
 //String spaceBar = "Press the Space Bar to Begin!";
 float splashScreenStart;
 color resetInk = #FFFFFF;
+Boolean rollOver = false, rollOverQuit = false;
 //
 void setup() {
   size(500, 550);
@@ -16,7 +17,7 @@ void setup() {
   tSetup();
   imagePopulation();
   displayAlgorithm();
-  debug();
+  //debug(); //Debug for Display Algorithm
   keyBinds();
 } //End setup
 //
@@ -32,5 +33,15 @@ void keyPressed() {
 void mousePressed() {
   keyBinds();
 } //End mousePressed
+//
+Boolean rollOver(int x, int y, int diameter) {
+  float disX = x - mouseX;
+  float disY = y - mouseY;
+  if (sqrt(sq(disX) + sq(disY)) < diameter/2 ) {
+    return true;
+  } else { 
+    return false;
+  }
+}
 //
 //End Main Program
