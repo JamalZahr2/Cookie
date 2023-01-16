@@ -9,13 +9,15 @@ void tSetup() {
 } //End text
 //
 void spaceBarText() {
-  fill(#000000);
+  stroke(4);
+  strokeWeight(3);
+  fill(#9997FA);
   rect( startX, startY, startWidth, startHeight );
   textAlign(CENTER, CENTER);
   int size = 30;
   textFont(Courier, size); //Come back to laterr
   String spaceBar = "Space PlaceHolder";
-  fill(#95E3FA);
+  fill(#000000); //fill(#95E3FA);
   text( spaceBar, startX, startY, startWidth, startHeight );
   //fill(resetInk);
   //text();
