@@ -3,7 +3,7 @@ int appWidth, appHeight, smallDimension, largeDimension;
 Boolean portrait = false, landscape = false, OS = false;
 float startX, startY, startWidth, startHeight;
 //PFont Comic = createFont("Comic Sans MS", 55), Font2;
-String spaceBar = "Press the Space Bar to Begin!";
+//String spaceBar = "Press the Space Bar to Begin!";
 float splashScreenStart;
 color resetInk = #FFFFFF;
 //
@@ -12,12 +12,12 @@ void setup() {
   appWidth = width;
   appHeight = height;
   //Assignment: Display Algorithm from Hello World - done
-  keyBinds();
   population();
   tSetup();
   imagePopulation();
   displayAlgorithm();
   debug();
+  keyBinds();
 } //End setup
 //
 void draw() {
