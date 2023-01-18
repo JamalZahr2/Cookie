@@ -1,4 +1,4 @@
-//Global Variables
+ //Global Variables
 int appWidth, appHeight, smallDimension, largeDimension;
 Boolean portrait = false, landscape = false, OS = false;
 float startX, startY, startWidth, startHeight;
