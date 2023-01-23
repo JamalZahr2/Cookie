@@ -1,4 +1,3 @@
-void Tab0() {
-  Song[CurrentSong + 3].play();
+void Tab0() {  
   splashScreen();
 } //End Tab0

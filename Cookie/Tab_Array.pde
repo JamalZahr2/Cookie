@@ -3,7 +3,7 @@
 int indexPosition = 0;
 //
 void Tabs() {
-  if ( key == 'w' ) { indexPosition = (indexPosition + 1); } //Debug Bypasser
+  if ( key == 'w' ) { indexPosition = (indexPosition + 1); } //Debug Tab Bypasser
   //if ( key == 's' ) { indexPosition = (indexPosition - 1); }
   if ( indexPosition == 0 ) { backgroundBlank(); Tab0(); println("Tab 1"); }
   if ( indexPosition == 1 ) { backgroundBlank(); Tab1(); println("Tab 2"); }

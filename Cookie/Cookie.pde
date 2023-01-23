@@ -34,7 +34,7 @@ void setup() {
   imagePopulation();
   displayAlgorithm();
   //debug(); //Debug for Display Algorithm
-  keyBinds();
+  //keyBinds();
 } //End setup
 //
 void draw() {

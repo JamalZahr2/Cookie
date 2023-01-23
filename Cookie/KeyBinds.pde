@@ -4,7 +4,13 @@ void keyBinds() {
   if ( OS == false ) { 
     println("Music Player Controls:");
     println("Press UP to Increase Volume, Press DOWN to Decrease Volume");
+    println("Press RIGHT to Go to the Next Song");
+    println("Press LEFT to Go to the Previous Song");
     println("Press F to Fast-Foward, Press R to Rewind");
+    println("Press M to Mute/Unmute PlayBack");
+    println("Press S to Toggle Song Stop");
+    println("Press L to Toggle Loop");
+    println("Click the Space Bar to Pause/Play");
     println("Press Enter to Begin!");
   }
   if ( OS == false && key == CODED || keyCode == ENTER ) {
