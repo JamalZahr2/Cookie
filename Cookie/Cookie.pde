@@ -1,4 +1,20 @@
- //Global Variables
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
+//
+import java.io.*;
+import java.lang.*; //Imports java language 
+//
+File file;
+//Global Variables
+Minim minim; //Creates and object to access all functions
+int SongNumber = 4;
+AudioPlayer[] Song = new AudioPlayer[SongNumber];
+int CurrentSong = SongNumber - SongNumber;
+//
 int appWidth, appHeight, smallDimension, largeDimension;
 Boolean portrait = false, landscape = false, OS = false;
 float startX, startY, startWidth, startHeight;
@@ -28,10 +44,12 @@ void draw() {
 //
 void keyPressed() {
   keyBinds();
+  Volume();
 } //End keyPressed
 //
 void mousePressed() {
   keyBinds();
+  Volume();
 } //End mousePressed
 //
 Boolean rollOver(int x, int y, int diameter) {

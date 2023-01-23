@@ -1,10 +1,10 @@
 //Boolean Tab1 = false, Tab2 = false, Tab3 = false, Tab4 = false, Tab5 = false, Tab6 = false, Tab7 = false, Tab8 = false, Tab9 = false;
-float[] TabNumber = new float[10]; // { Tab0, Tab1, Tab2, Tab3, Tab4, Tab5, Tab6, Tab7, Tab8, Tab9 }; //Array Code
+//float[] TabNumber = new float[10]; // { Tab0, Tab1, Tab2, Tab3, Tab4, Tab5, Tab6, Tab7, Tab8, Tab9 }; //Array Code
 int indexPosition = 0;
 //
 void Tabs() {
-  if ( key == 'w' ) { indexPosition = (indexPosition + 1); }
-  if ( key == 's' ) { indexPosition = (indexPosition - 1); }
+  if ( key == 'w' ) { indexPosition = (indexPosition + 1); } //Debug Bypasser
+  //if ( key == 's' ) { indexPosition = (indexPosition - 1); }
   if ( indexPosition == 0 ) { backgroundBlank(); Tab0(); println("Tab 1"); }
   if ( indexPosition == 1 ) { backgroundBlank(); Tab1(); println("Tab 2"); }
   if ( indexPosition == 2 ) { backgroundBlank(); Tab2(); println("Tab 3"); }

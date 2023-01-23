@@ -4,6 +4,28 @@ int circleButtonX1, circleButtonY1, circleButtonSize1;
 float Tab0Text1X, Tab0Text1Y, Tab0Text1Width, Tab0Text1Height;
 //
 void population() {
+  minim = new Minim(this);
+  v = 0;
+  Song[CurrentSong] = minim.loadFile("../Musicxs/2-seconds-of-silence.mp3");
+  Song[CurrentSong += 1] = minim.loadFile("../Musicxs/SneakySnitch.mp3");
+  Song[CurrentSong += 1] = minim.loadFile("../Musicxs/At_the_Speed_of_Light.mp3");
+  Song[CurrentSong += 1] = minim.loadFile("../Musicxs/A_Dance_of_Fire_and_Ice.mp3");
+  CurrentSong -= CurrentSong;
+  //
+  //file = new File(dataPath("../../../../Musicxs/.mp3"));
+  /*
+  File folder = new File("D:/Documents/Github/Final-Project/Musicxs");
+  File[] FileList = folder.listFiles();
+  for (File file : FileList) {
+    if (file.isFile()) {
+      if (file.toString().endsWith(".mp3")) {
+        System.out.println(file.getName().toLowerCase()); //Lists Files In Music Folder ending in ".mp3"
+      }
+    }
+  }
+  *///Path issues not resolved with less time so comment out for now
+  //println(""); //Debug and Song List via java
+  //printArray(FileList); //Had no time to finish/optimize, using processing language
   startX = appWidth * 1/8;
   startY = appHeight * 1/4 ;
   startWidth = appWidth * 3/4;
@@ -20,16 +42,6 @@ void population() {
   Tab0Text1Y = height * 31/64;
   Tab0Text1Width = 120;
   Tab0Text1Height = 120;
-  /*TabNumber[0] = Tab0;
-  TabNumber[1] = Tab1;
-  TabNumber[2] = Tab2;
-  TabNumber[3] = Tab3;
-  TabNumber[4] = Tab4;
-  TabNumber[5] = Tab5;
-  TabNumber[6] = Tab6;
-  TabNumber[7] = Tab7;
-  TabNumber[8] = Tab8;
-  TabNumber[9] = Tab9;*/
   
   
 } //End population
